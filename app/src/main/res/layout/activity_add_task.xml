@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".AddTaskActivity">
+
+    <!-- Task Name -->
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="526dp"
+        android:layout_height="918dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addtaskpage" />
+
+    <TextView
+        android:id="@+id/textViewCountdown"
+        android:layout_width="218dp"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/leaguespartanextrabold"
+        android:padding="1dp"
+        android:text="@string/scedule"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="37sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCountdown2"
+        android:layout_width="383dp"
+        android:layout_height="32dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/leaguespartanextrabold"
+        android:padding="1dp"
+        android:text="@string/lets_schedule_the_day"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTaskName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:padding="15dp"
+        android:textColorHint="@color/primaryTextColor"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeColor="@color/primaryTextColor"
+        app:boxStrokeWidth="4dp"
+        app:counterTextColor="@color/primaryTextColor"
+        app:helperTextTextColor="@color/primaryTextColor"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/primaryTextColor"
+        app:layout_constraintBottom_toTopOf="@+id/tilTaskDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:placeholderTextColor="@color/primaryTextColor"
+        app:prefixTextColor="@color/primaryTextColor"
+        app:suffixTextColor="@color/primaryTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundTint="@color/primaryTextColor"
+            android:hint="@string/hint_task_name"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            android:textColorLink="@color/primaryTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Description -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTaskDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textColorHint="@color/primaryTextColor"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeColor="@color/primaryTextColor"
+        app:boxStrokeWidth="4dp"
+        app:counterTextColor="@color/primaryTextColor"
+        app:helperTextTextColor="@color/primaryTextColor"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilTaskName"
+        app:placeholderTextColor="@color/primaryTextColor"
+        app:prefixTextColor="@color/primaryTextColor"
+        app:suffixTextColor="@color/primaryTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_description"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/cardBorderColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Select Date Button -->
+
+    <!-- Select Time Button -->
+
+    <!-- Selected Date Text -->
+
+    <!-- Selected Time Text -->
+
+    <!-- Priority Spinner -->
+
+    <!-- Save Task Button -->
+
+    <!-- Countdown Text -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSelectDate"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="208dp"
+        android:backgroundTint="@color/primaryTextColor"
+        android:elevation="6dp"
+        android:text="@string/btn_select_date"
+        android:textColor="@color/tertiaryTextColor"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/calendar"
+        app:iconTintMode="@color/primaryTextColor"
+        app:iconGravity="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilTaskDescription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSelectTime"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/primaryTextColor"
+        android:elevation="6dp"
+        android:text="@string/btn_select_time"
+        android:textColor="@color/tertiaryTextColor"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/timeeft"
+        app:iconGravity="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnSelectDate"
+        app:layout_constraintTop_toBottomOf="@+id/tilTaskDescription" />
+
+    <TextView
+        android:id="@+id/priodis"
+        android:layout_width="214dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:text="@string/selected_priority"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tilPriority"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelectedTime"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <TextView
+        android:id="@+id/tvSelectedTime"
+        android:layout_width="201dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="412dp"
+        android:padding="12dp"
+        android:text="@string/selected_time"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="214dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        android:padding="12dp"
+        android:text="@string/selected_date"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectDate" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPriority"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/spinner_border"
+        android:backgroundTint="@color/primaryTextColor"
+        android:foregroundTint="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        app:boxBackgroundColor="@color/primaryTextColor"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeColor="@color/priorityTextColor"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:counterOverflowTextColor="@color/primaryTextColor"
+        app:counterTextColor="@color/primaryTextColor"
+        app:cursorColor="@color/primaryTextColor"
+        app:helperTextTextColor="@color/primaryTextColor"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/primaryTextColor"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896"
+        app:passwordToggleTint="@color/primaryTextColor"
+        app:placeholderTextColor="@color/primaryTextColor"
+        app:prefixTextColor="@color/primaryTextColor"
+        app:startIconTint="@color/primaryTextColor"
+        app:suffixTextColor="@color/primaryTextColor">
+
+        <android.widget.Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_margin="6dp"
+            android:backgroundTint="@color/primaryTextColor"
+            android:entries="@array/priority_array"
+            android:foregroundTint="@color/primaryTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveTask"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="668dp"
+        android:backgroundTint="@color/primaryTextColor"
+        android:elevation="8dp"
+        android:text="@string/btn_save_task"
+        android:textColor="@color/tertiaryTextColor"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

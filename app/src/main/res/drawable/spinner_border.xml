@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Border properties -->
+    <solid android:color="@android:color/transparent"/> <!-- Transparent fill inside the spinner -->
+    <stroke
+        android:width="3dp"
+        android:color="@android:color/holo_red_light"/> <!-- Red border color -->
+
+    <!-- Corner radius for rounded edges -->
+    <corners android:radius="10dp" />
+</shape>

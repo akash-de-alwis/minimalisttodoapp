@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">Minimalist ToDo App</string>
+    <string-array name="priority_array" font-color="#5CD85A">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string name="hint_task_name">Task Name</string>
+    <string name="hint_description">Description</string>
+    <string name="btn_select_date">Select Date</string>
+    <string name="btn_select_time">Select Time</string>
+    <string name="selected_date">Selected Date: None</string>
+    <string name="selected_time">Selected Time: None</string>
+    <string name="btn_save_task">Save Task</string>
+    <string name="countdown_not_started">Countdown: Not started</string>
+    <string name="selected_priority">Select Priority</string>
+    <string name="scedule">Scedule</string>
+    <string name="lets_schedule_the_day">Lets Schedule the day !</string>
+    <string name="scedule_today">Scedule Today</string>
+    <string name="delete">Delete</string>
+    <string name="upcoming_tasks">Upcoming Tasks</string>
+    <string name="task_1">Task 1</string>
+    <string name="task_2">Task 2</string>
+    <string name="sample">sample task</string>
+
+
+</resources>
